@@ -8,8 +8,8 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        '/index.htm',
-        '/style69.css'
+        '/pwa-test/index.htm',
+        '/pwa-test/style69.css'
       ]).then(() => self.skipWaiting());
     })
   );
